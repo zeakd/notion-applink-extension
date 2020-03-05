@@ -1,0 +1,36 @@
+{
+  "name": "Open Notion App",
+  "version": "1.0",
+  "description": "Create a notion link banner to open in the desktop app",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.notion.so/*"
+      ],
+      "exclude_matches": [
+        "https://www.notion.so/",
+        "https://*.notion.so/work",
+        "https://*.notion.so/product",
+        "https://*.notion.so/startups",
+        "https://*.notion.so/students",
+        "https://*.notion.so/educators",
+        "https://*.notion.so/wikis",
+        "https://*.notion.so/projects",
+        "https://*.notion.so/notes",
+        "https://*.notion.so/mobile",
+        "https://*.notion.so/desktop",
+        "https://*.notion.so/web-clipper",
+        "https://*.notion.so/customers",
+        "https://*.notion.so/pricing",
+        "https://*.notion.so/jobs",
+        "https://*.notion.so/evernote",
+        "https://*.notion.so/login",
+        "https://*.notion.so/signup",
+        "https://*.notion.so/help"
+      ],
+      "js": ["content.js"],
+      "css": ["content.css"]
+    }
+  ]
+}
